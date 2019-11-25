@@ -1,27 +1,7 @@
 # training_git
 Introduction to git using Rtidytuesday scripts as an example. 
 
-
-# New Zealand Bird of the Year
-
-This week's data is from the [New Zealand Forest and Bird Orginization](https://www.forestandbird.org.nz/) courtesy of [Dragonfly Data Science](https://www.dragonfly.co.nz/news/2019-11-12-boty.html) by way of [Nathan Moore](https://twitter.com/nmoorenz).
-
-Full details around voting can be found at the [Bird of the Year site](https://www.birdoftheyear.org.nz/voting).
-
-I have uploaded the raw data and the clean data, was a quick `dplyr::pivot_longer()` call!
-
-Full details around voting are below - please note that votes are ranked 1-5 (1 is best, 5 is worst), and the voters do not need to submit all 5 votes.
-
-> This year, voting is based on the instant runoff (IRV) voting system, which is similar to the system you might have seen in local elections. When you vote, you can rank up to five of your favourite birds, with #1 indicating your favourite bird, #2 indicating your second favourite bird, and so on. It’s no problem if you want to vote for less than five birds.
-
-> How the winner is decided
-
-> In the IRV voting system, the first preferences of all the votes cast are tallied in a first round of counting. If no bird has more than half of the votes, new rounds of counting are held until one bird has a majority.
-
-> In each of these rounds the bird with the lowest number of votes is eliminated and the next ranked choice of those who voted for that bird are added to the totals of the remaining birds.
-
-> This process continues until one bird has a majority of votes and is crowned Bird of the Year.
-
+To get more information and description on the original dataset, [click here](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-11-19)
 
 # Data Dictionary
 
@@ -96,14 +76,28 @@ Encore une fois les solutions sont dans [copy_me](copy_me) ne perdez pas trop de
 
 |#script |feature1     |feature2 |
 |:---------|:---------|:-----------|
-|#1      | fix bug font    | change size caption |
-|#2      | to be added    | to be added |
+|#2      | fix bug font    | change size caption |
+|#3      | change bird text to line color    | change point shape to triangle |
+|#4      | -    | - |
+|#5      | -    | - |
+|#6      | -    | - |
 
 
-## premier tour
+## Premier tour
 
-Tout le monde programme sa feature sur sa branche en même temps. On tente le merge de la mort à la fin du tour.
+Tout le monde programme la feature 1 de son script sur sa branche en même temps. 
 
-## deuxieme tour
+## Deuxieme tour
 
-On recommence, cette fois ci en demandant des modifications ou de nouvelles features à chaque personne à faire sur une nouvelle branche.
+On recommence, cette fois ci tout le monde programme la feature 2 de son script sur sa nouvelle branche. 
+
+#### Credits
+
+First, to the Rtidytuesday repo:   
+https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-11-19  
+
+Then, to all contributors found on twitter which served as base material for this exercice:
+https://github.com/gkaramanis/tidytuesday/tree/master/week-47  
+https://github.com/stomperusa/TidyTuesday
+https://github.com/jkaupp/tidytuesdays/tree/master/2019/week47
+
