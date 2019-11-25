@@ -45,16 +45,16 @@ git clone https://github.com/ednaMontpellier/training_git.git
 
 Chacun son tour, vous ajouterez une feature qui vous a été confié parmis celle-ci
 
-* 1) Change barplot colors by the provided palette 
-* 2) Change x axis angle
-* 3) Add contouring in barblot
-* 4) Rename title to be more explicit: "Best ranked bird in New Zealand"
-* 5) Add a caption: "Data source: Rtidytuesday' 
-* 6) Change theme to classic
-* 7) Add the number of observations on top on each bar
-* 8) Change the caption font to italic
-* 9) Change the order of birds by sorted abundance in x axis
-* 10) Change title size to 18
+1) Change barplot colors by the provided palette 
+2) Change x axis angle
+3) Add contouring in barblot
+4) Rename title to be more explicit: "Best ranked bird in New Zealand"
+5) Add a caption: "Data source: Rtidytuesday' 
+6) Change theme to classic
+7) Add the number of observations on top on each bar
+8) Change the caption font to italic
+9) Change the order of birds by sorted abundance in x axis
+10) Change title size to 18
 
 Les codes de base ainsi que la correction complète sont dans le dossier [copy_me](copy_me) donc vous pouvez simplement copier/coller la partie du code source de ces scripts correspondant a votre tache. Le but de ce TP est d'utiliser `git` (pas de passer trop de temps sur la programmation R donc)
 
@@ -93,9 +93,12 @@ Chaque personne a une feature a programmer sur un script personnel qu'il enregis
 
 Encore une fois les solutions sont dans [copy_me](copy_me) ne perdez pas trop de temps à coder en R, le but c'est de pratiquer `git`.
 
-* feature a
-* feature b
-* ...
+
+|#script |feature1     |feature2 |
+|:---------|:---------|:-----------|
+|#1      | fix bug font    | change size caption |
+|#2      | to be added    | to be added |
+
 
 ## premier tour
 

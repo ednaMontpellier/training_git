@@ -1,6 +1,8 @@
 # Feature 1 
 # Simple barplot of the rank 1 among votes
 
+# This is the base script on which you will have to add sequentially the following features:
+
 # List of 10 features to change in this script:
 # 1) Change barplot colors by the provided palette 
 # 2) Change x axis angle

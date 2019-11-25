@@ -1,7 +1,17 @@
-# Feature 1 - correction
+# Feature 1 
 # Simple barplot of the rank 1 among votes
 
-# All 10 features have been taken into account
+# List of 10 features to change in this script:
+# 1) Change barplot colors by the provided palette 
+# 2) Change x axis angle
+# 3) Add contouring in barblot
+# 4) Rename title to be more explicit: "Best ranked bird in New Zealand"
+# 5) Add a caption: "Data source: Rtidytuesday' 
+# 6) Change theme to classic
+# 7) Add the number of observations on top on each bar
+# 8) Change the caption font to italic
+# 9) Change the order of birds by sorted abundance in x axis
+# 10) Change title size to 18
 
 # Lib
 library(readr)
@@ -41,29 +51,23 @@ str(votes1)
 votes1 <- arrange(votes1, desc(total))
 # Extract the first 8 ones
 top_votes_1 <- votes1[1:8,]
-str(top_votes_1)
+str(top_votes)
 
 # Plot first 8
-votes_1_plot <- ggplot(top_votes_1, aes(x = reorder(bird_breed, -total), y = total, fill = bird_breed)) +
-  geom_bar(stat = 'identity', col="black") +
-  geom_text(aes(label=total), vjust=-1) + 
-  scale_fill_manual(values = my_palette)+
-  theme_classic()+
+votes_1_plot <- ggplot(top_votes_1, aes(x = bird_breed, y = total, fill = bird_breed))+
+  geom_bar(stat = 'identity')+
+  # scale_fill_manual(values = my_palette)+
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
         axis.line = element_line(colour = 'black'),
-        plot.title = element_text(size=18),
-        axis.text.x = element_text(angle = 45, hjust = 1),
-        plot.caption = element_text(face = "italic"),
+        axis.text.x = element_text(angle = 0, hjust = 1),
         legend.position = 'none')+
-  scale_y_continuous(expand = c(0,350))+
-  labs(title="Best ranked birds in New Zealand",
-    caption = "Data source: Rtidytuesday") +
+  scale_y_continuous(expand = c(0,0))+
+  ggtitle('Vote Rank 1')+
   xlab('Bird Breed')+
   ylab('Number of Votes')
-
 votes_1_plot
 
 # Save the plot
-ggsave(votes_1_plot, file="plots/feature1_correction.png", width=9, height=7)
+ggsave(votes_1_plot, file="plots/script1.png", width=6, height=5)
 
