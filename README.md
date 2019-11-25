@@ -1,11 +1,5 @@
 # training_git
-Introduction to git using Rtidytuesday scripts as an example
-
-
-
-
-
-
+Introduction to git using Rtidytuesday scripts as an example. 
 
 
 # New Zealand Bird of the Year
@@ -29,9 +23,6 @@ Full details around voting are below - please note that votes are ranked 1-5 (1 
 > This process continues until one bird has a majority of votes and is crowned Bird of the Year.
 
 
-
-
-
 # Data Dictionary
 
 ## `nz_bird`
@@ -44,7 +35,6 @@ Full details around voting are below - please note that votes are ranked 1-5 (1 
 |bird_breed |character | Bird breed |
 
 
-
 # Phase 1 clonez moi
 
 ```
@@ -55,16 +45,23 @@ git clone https://github.com/ednaMontpellier/training_git.git
 
 Chacun son tour, vous ajouterez une feature qui vous a été confié parmis celle-ci
 
-* featyre a
-* feature b
-* etc
+* 1) Change barplot colors by the provided palette 
+* 2) Change x axis angle
+* 3) Add contouring in barblot
+* 4) Rename title to be more explicit: "Best ranked bird in New Zealand"
+* 5) Add a caption: "Data source: Rtidytuesday' 
+* 6) Change theme to classic
+* 7) Add the number of observations on top on each bar
+* 8) Change the caption font to italic
+* 9) Change the order of birds by sorted abundance in x axis
+* 10) Change title size to 18
 
-Les codes originaux sont dans le dossier [copy_me](copy_me) donc vous pouvez simplement copier/coller le code source de ces scripts. Le but de ce TP est d'utiliser `git` (pas de passer trop de temps sur la programmation R donc)
+Les codes de base ainsi que la correction complète sont dans le dossier [copy_me](copy_me) donc vous pouvez simplement copier/coller la partie du code source de ces scripts correspondant a votre tache. Le but de ce TP est d'utiliser `git` (pas de passer trop de temps sur la programmation R donc)
 
+## Premier tour
 
-## premier tour
+Chacun son tour vous utiliserez les commandes git principales. [feature 1-5]
 
-chacun son tour vous 
 ```
 git pull
 git add
@@ -72,15 +69,15 @@ git commit
 git push
 ```
 
-## deuxieme tour
+Ces commandes sont à taper dans le terminal dans le répertoire du dossier git. A noter que Rstudio intègre Git et permet d'effecter ces taches de façon très simple en click-bouton. Il est toutefois important de bien comprendre les actions effectuées par chacune des étapes, qu'elles soient effectuées manuellement ou à travers Rstudio (ou Atom, autre gestionnaire de script intégrant Git)
 
-on refait un tour pour vérifier que tout le monde a bien compris (en ajoutant une modification)
+## Deuxieme tour
 
+On refait un tour pour vérifier que tout le monde a bien compris (en ajoutant une modification). [features 6-10]
 
 # Phase 3 (si on va aussi loin) travail en parallele
 
-Notion de branche 
-
+Notion de branches. 
 
 ```
 git branch
@@ -102,9 +99,8 @@ Encore une fois les solutions sont dans [copy_me](copy_me) ne perdez pas trop de
 
 ## premier tour
 
-tout le monde programme sa feature sur sa branche en même temps
-on tente le merge de la mort à la fin du tour
+Tout le monde programme sa feature sur sa branche en même temps. On tente le merge de la mort à la fin du tour.
 
 ## deuxieme tour
 
-on recommence, cette fois ci en demandant des modifications ou de nouvelles features à chaque personne à faire sur une nouvelle branche.
+On recommence, cette fois ci en demandant des modifications ou de nouvelles features à chaque personne à faire sur une nouvelle branche.
