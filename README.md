@@ -1,4 +1,5 @@
-# training_git
+# Training_git
+
 Introduction to git using Rtidytuesday scripts as an example. 
 
 To get more information and description on the original dataset, [click here](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-11-19)
@@ -78,20 +79,25 @@ Encore une fois les solutions sont dans [copy_me](copy_me) ne perdez pas trop de
 |:---------|:---------|:-----------|
 |#2      | fix bug font    | change size caption |
 |#3      | change bird text to line color    | change point shape to triangle |
-|#4      | -    | - |
-|#5      | -    | - |
-|#6      | -    | - |
+|#4      | change background color to gray14    | remove background lines  |
+|#5      | remove one fill parameter    |  assemble all plots in one |
+|#6      | color strip text color to white    | change background to black + remove lines |
 
 
 ## Premier tour
 
-Tout le monde programme la feature 1 de son script sur sa branche en même temps. 
+Tout le monde programme la feature 1 de son script sur sa branche en même temps. On merge chaque branche une fois la modification effectuée. 
 
 ## Deuxieme tour
 
-On recommence, cette fois ci tout le monde programme la feature 2 de son script sur sa nouvelle branche. 
+On recommence, cette fois ci tout le monde programme la feature 2 de son script sur sa nouvelle branche, puis on les merge toutes sur master. 
 
-#### Credits
+## NB
+
+En cas de problème nécessitant l'assistance ou l'attention des autres personnes travaillant sur le projet, il est possible de remplir une `issue` dans github.   
+En explicitant bien sa demande ou son bug, on peut plus facilement obtenir de l'aide ou une ressource. 
+
+## Credits
 
 First, to the Rtidytuesday repo:   
 https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-11-19  
@@ -100,4 +106,6 @@ Then, to all contributors found on twitter which served as base material for thi
 https://github.com/gkaramanis/tidytuesday/tree/master/week-47  
 https://github.com/stomperusa/TidyTuesday
 https://github.com/jkaupp/tidytuesdays/tree/master/2019/week47
+https://github.com/r0mymendez/R/tree/master/TidyTuesday/20191124-New%20Zealand%20Bird%20of%20the%20Year
+https://github.com/jwatzek/tidytuesday
 

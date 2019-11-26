@@ -27,7 +27,6 @@ bird_long <- boty %>%
   mutate(idx = row_number()) %>% 
   pivot_longer(cols = vote_1:vote_5, names_to = "vote_rank", values_to = "bird_breed") %>% 
   filter(!is.na(vote_rank), !is.na(bird_breed)) %>%
-
   count(vote_rank, bird_breed)
 
 # palette
@@ -70,9 +69,14 @@ plot <- ggplot(bird_sets, aes(x = x, id = id, split = y, value = n)) +
                            The heavier the line, the more votes cast with that particular combination.", 200),
        caption = "Data: **NZ Forest & Bird** | Modified from: **@jakekaupp**") +
   scale_x_discrete(labels = c("First Vote", "Second Vote", "Third Vote", "Fourth Vote", "Fifth Vote")) +
-  theme_jk()
+  theme_jk() +
+  # theme_minimal() + 
+  theme(panel.background = element_rect(fill = "gray14",
+                                        colour = "gray14"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank())
 
 plot
 
 # Save plot
-ggsave("plots/script4.png", plot, width = 16, height = 12, dpi = 150)
+ggsave("expected_plots/script4_correction.png", plot, width = 16, height = 12, dpi = 150)
