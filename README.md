@@ -19,14 +19,14 @@ Pour en savoir plus sur le projet et les données, [cliquez ici](https://github.
 
 
 
-# Phase 1 clonez moi
+# Phase 1 - Clonez moi
 
 ```
-git clone https://github.com/ednaMontpellier/training_git.git
+git clone https://github.com/ednaMontpellier/workshop_git.git
 ```
 
 
-# Phase 2 - un projet à tour de role
+# Phase 2 - Un projet à tour de role
 
 
 
@@ -68,7 +68,7 @@ Ces commandes sont à taper dans le terminal dans le répertoire du dossier git.
 
 On refait un tour pour vérifier que tout le monde a bien compris (en ajoutant une modification). [features 6-10]
 
-# Phase 3 - Collaborer en parallele
+# Phase 3 - Collaborer en travaillant en parallèle
 
 
 Notion de branches. 
