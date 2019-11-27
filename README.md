@@ -1,11 +1,12 @@
-# Training_git
+# Workshop `git`
+<img src="support/gitlogo.png" width="100" /> <img src="support/cefe.jpg" width="100" /> <img src="support/ephe_psl.jpeg" width="200" />
 
-Introduction to git using data from Rtidytuesday week 47.   
-Scripts used as examples were found from users on twitter. 
+Introduction à `git` et github avec pour usecase le projet du Rtidytuesday week 47.
+Les scripts utilisés ont été tirés des publications libre des utilisateurs du [Rtidytuesday](https://github.com/rfordatascience/tidytuesday) sur twitter.
 
-To get more information and description on the original dataset, [click here](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-11-19)
+Pour en savoir plus sur le projet et les données, [cliquez ici](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-11-19)
 
-# Data Dictionary
+# Dictionnaire des données
 
 ## `nz_bird`
 
@@ -17,13 +18,23 @@ To get more information and description on the original dataset, [click here](ht
 |bird_breed |character | Bird breed |
 
 
+
 # Phase 1 clonez moi
 
 ```
 git clone https://github.com/ednaMontpellier/training_git.git
 ```
 
-# Phase 2 un projet à tour de role
+
+# Phase 2 - un projet à tour de role
+
+
+
+<img src="support/git_team_workflow_singlebranch_peguerin.png" width="600" />
+
+
+
+
 
 Chacun son tour, vous ajouterez une feature qui vous a été confiée parmis celles-ci:
 
@@ -57,9 +68,19 @@ Ces commandes sont à taper dans le terminal dans le répertoire du dossier git.
 
 On refait un tour pour vérifier que tout le monde a bien compris (en ajoutant une modification). [features 6-10]
 
-# Phase 3 (si on va aussi loin) travail en parallele
+# Phase 3 - Collaborer en parallele
+
 
 Notion de branches. 
+
+<img src="support/git_timeline.png" width="800" />
+
+
+
+
+<img src="support/git_team_workflow_usingbranches.png" width="600" />
+
+
 
 ```
 git branch
@@ -67,6 +88,7 @@ git checkout
 git add
 git commit
 git rebase
+git merge
 git checkout
 git pull
 ```
@@ -93,12 +115,12 @@ Tout le monde programme la feature 1 de son script sur sa branche en même temps
 
 On recommence, cette fois ci tout le monde programme la feature 2 de son script sur sa nouvelle branche, puis on les merge toutes sur master. 
 
-## NB
+# NB
 
 En cas de problème nécessitant l'assistance ou l'attention des autres personnes travaillant sur le projet, il est possible de remplir une `issue` dans github.   
 En explicitant bien sa demande ou son bug, on peut plus facilement obtenir de l'aide ou une ressource. 
 
-## Credits
+# Credits
 
 First, to the Rtidytuesday repo:   
 https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-11-19  
@@ -110,3 +132,4 @@ https://github.com/jkaupp/tidytuesdays/tree/master/2019/week47
 https://github.com/r0mymendez/R/tree/master/TidyTuesday/20191124-New%20Zealand%20Bird%20of%20the%20Year
 https://github.com/jwatzek/tidytuesday
 
+Workshop made by Virginies MARQUES & Pierre-Edouard GUERIN
