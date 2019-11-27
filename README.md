@@ -1,7 +1,7 @@
 # Training_git
 
 Introduction to git using data from Rtidytuesday week 47.   
-Scripts used as examples were found from users in twitter. 
+Scripts used as examples were found from users on twitter. 
 
 To get more information and description on the original dataset, [click here](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-11-19)
 
@@ -25,7 +25,7 @@ git clone https://github.com/ednaMontpellier/training_git.git
 
 # Phase 2 un projet à tour de role
 
-Chacun son tour, vous ajouterez une feature qui vous a été confié parmis celle-ci
+Chacun son tour, vous ajouterez une feature qui vous a été confiée parmis celles-ci:
 
 1) Change barplot colors by the provided palette 
 2) Change x axis angle
@@ -71,7 +71,7 @@ git checkout
 git pull
 ```
 
-Chaque personne a une feature a programmer sur un script personnel qu'il enregistre sur sa propre branche. Quand tout le monde a terminé de travailler. On merge les branches de chacun.
+Chaque personne a une feature a programmer sur un script personnel qu'il/elle enregistre sur sa propre branche. Quand tout le monde a terminé de travailler, on merge les branches de tout le monde.
 
 Encore une fois les solutions sont dans [copy_me](copy_me) ne perdez pas trop de temps à coder en R, le but c'est de pratiquer `git`.
 
