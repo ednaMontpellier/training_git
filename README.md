@@ -1,6 +1,7 @@
 # Training_git
 
-Introduction to git using Rtidytuesday scripts as an example. 
+Introduction to git using data from Rtidytuesday week 47.   
+Scripts used as examples were found from users in twitter. 
 
 To get more information and description on the original dataset, [click here](https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-11-19)
 
