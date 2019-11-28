@@ -72,7 +72,9 @@ plot <- ggplot(bird_sets, aes(x = x, id = id, split = y, value = n)) +
   scale_x_discrete(labels = c("First Vote", "Second Vote", "Third Vote", "Fourth Vote", "Fifth Vote")) +
   theme_jk()+
   theme(panel.background = element_rect(fill = "gray14",
-                                           colour = "gray14"))
+                                           colour = "gray14"),
+        panel.grid.major = element_blank(), 
+        panel.grid.minor = element_blank())
 
 plot
 
