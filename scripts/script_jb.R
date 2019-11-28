@@ -62,8 +62,8 @@ votes_1_plot <- ggplot(top_votes_1, aes(x = bird_breed, y = total, fill = bird_b
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
         axis.line = element_line(colour = 'black'),
-        axis.text.x = element_text(angle = 0, hjust = 1),
-        legend.position = 'none')+
+        axis.text.x = element_text(angle = 90, hjust = 1),
+        legend.position = 'none')+ # STéphanie a change l'axe X
   scale_y_continuous(expand = c(0,0))+
   ggtitle('Best ranked bird in New Zealand')+
   xlab('Bird Breed')+
