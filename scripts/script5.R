@@ -4,7 +4,6 @@ library(tidyverse)
 library(emojifont)
 library(grid)
 library(ggpubr)
-devtools::install_github("hadley/emo")
 library(emo)
 
 # Load data
@@ -46,7 +45,6 @@ g1 <- ggplot(df,aes(x=bird_breed,y=n,fill=bird_breed))+
   annotate("text",
            label = 'Bird of the Year',
            x = 3, y = 6000, size = 10,
-           # fill ='#fffeea',
            colour ="white")+
   theme(plot.background = element_rect(color='black',fill='black'),
         panel.background =  element_rect(color='black',fill='black'),
@@ -136,10 +134,11 @@ map <- ggplot()+
   theme(plot.background = element_rect(color='black',fill='black'),
         panel.background =  element_rect(color='black',fill='black'))
 
+map
 
 # Arrange all plots
 all_plots <- ggarrange(g3,  g2,map,
-          ncol = 3, nrow = 1,widths= c(.8,1.5,.7) )+
+                       ncol = 3, nrow = 1,widths= c(.8,1.5,.7) )+
   labs(caption=paste0("Source: New Zealand Forest and Bird Orginization  | by @r0mymendez", emo::ji("heart")),
        subtitle = ' ',
        title='New Zealand Bird of the Year') +
@@ -152,7 +151,11 @@ all_plots <- ggarrange(g3,  g2,map,
 
 all_plots
 
+# All 
+all_plots_2 <- ggarrange(g1, all_plots, ncol=1)
+all_plots_2
+
 # Save
-ggsave("plots/script5.png", all_plots, width = 12, height=8)
+ggsave("expected_plots/script5_correction.png", all_plots_2, width = 15, height=18)
 
 

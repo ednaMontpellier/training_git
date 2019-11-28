@@ -60,7 +60,7 @@ ranked <- bird_scores %>%
 
 # Plot 
 ggplot(ranked, aes(x=date, y=rank)) +
-  geom_point(aes(color = bird_breed)) +
+  geom_point(aes(color = bird_breed), pch = 17) +
   geom_line(aes(color = bird_breed)) +
   geom_text(data = subset(ranked, ranked$date == min(ranked$date)), 
             aes(date, rank, label = bird_breed, color = bird_breed), size = 2,
