@@ -2,6 +2,7 @@
 
 # Lib
 library(tidyverse)
+library(ggplot2)
 library(here)
 
 # Two feature on this script
