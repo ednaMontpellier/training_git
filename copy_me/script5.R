@@ -4,6 +4,7 @@ library(tidyverse)
 library(emojifont)
 library(grid)
 library(ggpubr)
+devtools::install_github("hadley/emo")
 library(emo)
 
 # Load data

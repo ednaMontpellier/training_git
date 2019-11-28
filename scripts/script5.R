@@ -4,6 +4,7 @@ library(tidyverse)
 library(emojifont)
 library(grid)
 library(ggpubr)
+devtools::install_github("hadley/emo")
 library(emo)
 
 # Load data
@@ -45,7 +46,7 @@ g1 <- ggplot(df,aes(x=bird_breed,y=n,fill=bird_breed))+
   annotate("text",
            label = 'Bird of the Year',
            x = 3, y = 6000, size = 10,
-           fill ='#fffeea',
+           # fill ='#fffeea',
            colour ="white")+
   theme(plot.background = element_rect(color='black',fill='black'),
         panel.background =  element_rect(color='black',fill='black'),
