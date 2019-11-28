@@ -3,7 +3,7 @@ library(tidyverse)
 library(cowplot)
 # install.packages("waffle", repos = "https://cinc.rud.is")
 library(waffle)
-
+# espoir
 # data
 # d <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-11-19/nz_bird.csv')
 load("Rdata/get_data.Rdata")
