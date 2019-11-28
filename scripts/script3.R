@@ -1,6 +1,7 @@
 # Lib
 library(tidyverse)
 library(lubridate)
+library(tidyr)
 
 # Features:
 # 1) Change colors of birds names to the color of the line 
@@ -61,10 +62,10 @@ ggplot(ranked, aes(x=date, y=rank)) +
   geom_point(aes(color = bird_breed)) +
   geom_line(aes(color = bird_breed)) +
   geom_text(data = subset(ranked, ranked$date == min(ranked$date)), 
-            aes(date, rank, label = bird_breed), size = 2,
+            aes(date, rank, label = bird_breed, color = bird_breed), size = 2,
             nudge_y = 0.2, nudge_x = 0.5) +
   geom_text(data = subset(ranked, ranked$date == max(ranked$date)), 
-            aes(date, rank, label = bird_breed), size = 2,
+            aes(date, rank, label = bird_breed, color = bird_breed), size = 2,
             nudge_y = 0.2, nudge_x = -0.5) +
   scale_y_reverse(breaks = 1:10, labels = c("1st", "2nd", "3rd", str_c(4:10,"th"))) +
   scale_x_date(breaks = seq(from = min(ranked$date), to = max(ranked$date), by = "day"),
@@ -76,4 +77,4 @@ ggplot(ranked, aes(x=date, y=rank)) +
   theme(panel.background=element_rect(fill = NA), axis.ticks.y = element_line(size = NA))
 
 # Save
-ggsave('plots/script3.png', width=10, height=8)
+ggsave('plots/script3_EB.png', width=10, height=8)
