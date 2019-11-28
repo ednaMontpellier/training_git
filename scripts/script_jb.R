@@ -66,7 +66,7 @@ votes_1_plot <- ggplot(top_votes_1, aes(x = bird_breed, y = total, fill = bird_b
         axis.text.x = element_text(angle = 90, hjust = 1),
         legend.position = 'none')+ # STéphanie a change l'axe X
   scale_y_continuous(expand = c(0,0))+
-  ggtitle("Best ranked bird in New Zealand \n Data source: Rtidytuesday")+
+  ggtitle("Super best ranked bird in New Zealand \n Data source: Rtidytuesday")+
   xlab('Bird Breed')+
   ylab('Number of Votes')
 votes_1_plot
