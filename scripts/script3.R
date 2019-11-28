@@ -5,6 +5,7 @@ library(tidyr)
 
 # Features:
 # 1) Change colors of birds names to the color of the line 
+# 1 bis) pretty legend
 # 2) Change point shape to triangle
 
 # Import data
@@ -74,7 +75,8 @@ ggplot(ranked, aes(x=date, y=rank)) +
        subtitle = "Daily Progression of Top 10 Rankings",
        y = "", x = "Voting Period",
        color = "Bird Breed") +
-  theme(panel.background=element_rect(fill = NA), axis.ticks.y = element_line(size = NA))
+  theme(legend.key = element_rect(fill = NA),
+        panel.background=element_rect(fill = NA), axis.ticks.y = element_line(size = NA))
 
 # Save
 ggsave('plots/script3_EB.png', width=10, height=8)
