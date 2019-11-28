@@ -9,9 +9,8 @@ library(waffle)
 load("Rdata/get_data.Rdata")
 d <- nz_bird
 
-# Features 
-# 1) color of strip text to white
-# 2) color of background to black + remove lines
+## assign voter ID for instant runoff
+# mutate(id = (row_number() - 1) %/% 5, vote_rank = ...)
 
 d2 <- d %>% 
   mutate(vote_rank = str_sub(vote_rank, -1)) %>% 
@@ -55,10 +54,11 @@ p <- ggplot(d2, aes(values = votes/25, x = votes, fill = vote_rank)) +
     legend.title = element_text(size = 12), legend.text = element_text(size = 10),
     plot.background = element_rect(fill = 'grey20', color = 'grey20'),
     legend.background = element_blank(),panel.border = element_blank(),
-    strip.background = element_blank()
+    strip.background = element_blank(), strip.text = element_text(color = 'grey85'),
+    panel.background = element_blank(), panel.grid.minor = element_blank(), panel.grid.major = element_blank()
   )
 
 p
 
-ggsave('plots/script6.png', p, width = 8, height = 7)
+ggsave('expected_plots/script6_correction.png', p, width = 8, height = 7)
 
