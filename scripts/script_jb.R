@@ -1,6 +1,8 @@
 # Feature 1 
 # Simple barplot of the rank 1 among votes
 
+# coucou
+
 # List of 10 features to change in this script:
 # 1) Change barplot colors by the provided palette 
 # 2) Change x axis angle
@@ -56,7 +58,7 @@ str(top_votes)
 # Plot first 8
 votes_1_plot <- ggplot(top_votes_1, aes(x = bird_breed, y = total, fill = bird_breed))+
   geom_bar(stat = 'identity')+
-  # scale_fill_manual(values = my_palette)+
+  scale_fill_manual(values = my_palette)+ # done Emilie
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
         axis.line = element_line(colour = 'black'),
