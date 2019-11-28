@@ -59,6 +59,7 @@ str(top_votes)
 votes_1_plot <- ggplot(top_votes_1, aes(x = bird_breed, y = total, fill = bird_breed))+
   geom_bar(stat = 'identity', color = "black")+
   scale_fill_manual(values = my_palette)+ # done Emilie
+  theme_classic()+
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
         axis.line = element_line(colour = 'black'),
