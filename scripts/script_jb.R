@@ -7,7 +7,7 @@
 # 1) Change barplot colors by the provided palette 
 # 2) Change x axis angle
 # 3) Add contouring in barblot
-# 4) Rename title to be more explicit: "Best ranked bird in New Zealand"
+# 4) Rename title to be more explicit: "Best ranked bird in New Zealand"  -> Done by Laetitia
 # 5) Add a caption: "Data source: Rtidytuesday' 
 # 6) Change theme to classic
 # 7) Add the number of observations on top on each bar
@@ -65,7 +65,7 @@ votes_1_plot <- ggplot(top_votes_1, aes(x = bird_breed, y = total, fill = bird_b
         axis.text.x = element_text(angle = 0, hjust = 1),
         legend.position = 'none')+
   scale_y_continuous(expand = c(0,0))+
-  ggtitle('Vote Rank 1')+
+  ggtitle('Best ranked bird in New Zealand')+
   xlab('Bird Breed')+
   ylab('Number of Votes')
 votes_1_plot
